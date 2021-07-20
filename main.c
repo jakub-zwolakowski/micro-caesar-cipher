@@ -35,3 +35,28 @@ int main(void)
 
     return 0;
 }
+
+int test_1(void)
+{
+    char orig_str[] = "People of Earth, your attention please";
+
+    printf("Test 1: Shift with a negative input\n");
+    gen_test(orig_str, -3);
+}
+
+int test_2(void)
+{
+    char orig_str[] = "People of Earth, your attention please";
+
+    printf("Test 2: Shift with a positive input\n");
+    gen_test(orig_str, 7);
+}
+
+int test_3(void)
+{
+    char orig_str[] = "People of Earth, your attention please";
+
+    printf("Test 3: Shift with INT_MIN\n");
+    gen_test(orig_str, INT_MIN);
+}
+
