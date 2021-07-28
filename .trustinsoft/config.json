@@ -1,0 +1,32 @@
+[
+    {
+        "name": "test_0",
+        "files": [ "main.c", "caesar.c" ],
+        "cpp-extra-args": "-I.",
+        "main": "test_0"
+    },
+    {
+        "name": "test_1",
+        "files": [ "main.c", "caesar.c" ],
+        "cpp-extra-args": "-I.",
+        "main": "test_1"
+    },
+    {
+        "name": "test_2",
+        "files": [ "main.c", "caesar.c" ],
+        "cpp-extra-args": "-I.",
+        "main": "test_2"
+    },
+    {
+        "name": "test_3",
+        "files": [ "main.c", "caesar.c" ],
+        "cpp-extra-args": "-I.",
+        "main": "test_3"
+    },
+    {
+        "name": "test_suite",
+        "files": [ "main.c", "caesar.c" ],
+        "cpp-extra-args": "-I.",
+        "main": "main"
+    }
+]
