@@ -1,3 +1,5 @@
+all: main
+
 main: caesar.h caesar.c main.c
 	@gcc -I. caesar.c main.c -o main
 
