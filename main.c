@@ -15,11 +15,11 @@ void gen_test(char *str, int shift)
 
     printf("Decrypt text '%s'\n", res1);
     res2 = caesar_decrypt(res1, shift);
-    if (!res2) goto l;
+    if (!res2) goto L;
     printf("Result:       %s\n", res2);
 
     free(res2);
-l:  free(res1);
+L:  free(res1);
 }
 
 void test_0(void)
