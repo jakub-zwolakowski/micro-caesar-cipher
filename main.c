@@ -26,7 +26,7 @@ void test_0(void)
 {
     char str[] = "People of Earth";
 
-    printf("Test 0: No bug on the execution path\n");
+    printf("\nTest 0: Short string\n");
     gen_test(str, 3);
 }
 
@@ -34,7 +34,7 @@ void test_1(void)
 {
     char str[] = "People of Earth, your attention please";
 
-    printf("Test 1: Shift with a negative input\n");
+    printf("\nTest 1: Shift with a negative input\n");
     gen_test(str, -3);
 }
 
@@ -42,7 +42,7 @@ void test_2(void)
 {
     char str[] = "People of Earth, your attention please";
 
-    printf("Test 2: Shift with a positive input\n");
+    printf("\nTest 2: Shift with a positive input\n");
     gen_test(str, 7);
 }
 
@@ -50,18 +50,23 @@ void test_3(void)
 {
     char str[] = "People of Earth, your attention please";
 
-    printf("Test 3: Shift with INT_MIN\n");
+    printf("\nTest 3: Shift with INT_MIN\n");
     gen_test(str, INT_MIN);
+}
+
+void test_4(void)
+{
+    char str[] = "People of Earth, your attention please";
+
+    printf("\nTest 4: Shift with INT_MAX\n");
+    gen_test(str, INT_MAX);
 }
 
 void main(void)
 {
-    char str[] = "People of Earth, your attention please";
-
-    printf("Test 1: Shift with a negative input\n");
-    gen_test(str, -3);
-    printf("\nTest 2: Shift with a positive input\n");
-    gen_test(str, 7);
-    printf("\nTest 3: Shift with INT_MIN\n");
-    gen_test(str, INT_MIN);
+    test_0();
+    test_1();
+    test_2();
+    test_3();
+    test_4();
 }

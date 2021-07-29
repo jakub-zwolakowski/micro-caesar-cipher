@@ -1,37 +1,98 @@
 [
     {
-        "name": "Test 0: No bug on the execution path",
+        "name": "Interpreter, Test 0: Short string",
         "prefix_path": "..",
         "files": [ "main.c", "caesar.c" ],
         "cpp-extra-args": "-I.",
         "main": "test_0"
     },
     {
-        "name": "Test 1: Shift with a negative input",
+        "name": "Interpreter, Test 1: Shift with a negative input",
         "prefix_path": "..",
         "files": [ "main.c", "caesar.c" ],
         "cpp-extra-args": "-I.",
         "main": "test_1"
     },
     {
-        "name": "Test 2: Shift with a positive input",
+        "name": "Interpreter, Test 2: Shift with a positive input",
         "prefix_path": "..",
         "files": [ "main.c", "caesar.c" ],
         "cpp-extra-args": "-I.",
         "main": "test_2"
     },
     {
-        "name": "Test 3: Shift with INT_MIN",
+        "name": "Interpreter, Test 3: Shift with INT_MIN",
         "prefix_path": "..",
         "files": [ "main.c", "caesar.c" ],
         "cpp-extra-args": "-I.",
         "main": "test_3"
     },
     {
-        "name": "Test 1, Test 2, Test 3",
+        "name": "Interpreter, Test 4: Shift with INT_MAX",
+        "prefix_path": "..",
+        "files": [ "main.c", "caesar.c" ],
+        "cpp-extra-args": "-I.",
+        "main": "test_4"
+    },
+    {
+        "name": "Interpreter, Test 1, 2, 3, 4",
         "prefix_path": "..",
         "files": [ "main.c", "caesar.c" ],
         "cpp-extra-args": "-I.",
         "main": "main"
+    },
+    {
+        "name": "Interpreter, Test 0: Short string",
+        "prefix_path": "..",
+        "files": [ "main.c", "caesar.c" ],
+        "cpp-extra-args": "-I.",
+        "main": "test_0",
+        "val-profile": "analyzer",
+        "slevel": 100
+    },
+    {
+        "name": "Interpreter, Test 1: Shift with a negative input",
+        "prefix_path": "..",
+        "files": [ "main.c", "caesar.c" ],
+        "cpp-extra-args": "-I.",
+        "main": "test_1",
+        "val-profile": "analyzer",
+        "slevel": 100
+    },
+    {
+        "name": "Interpreter, Test 2: Shift with a positive input",
+        "prefix_path": "..",
+        "files": [ "main.c", "caesar.c" ],
+        "cpp-extra-args": "-I.",
+        "main": "test_2",
+        "val-profile": "analyzer",
+        "slevel": 100
+    },
+    {
+        "name": "Interpreter, Test 3: Shift with INT_MIN",
+        "prefix_path": "..",
+        "files": [ "main.c", "caesar.c" ],
+        "cpp-extra-args": "-I.",
+        "main": "test_3",
+        "val-profile": "analyzer",
+        "slevel": 100
+    },
+    {
+        "name": "Interpreter, Test 4: Shift with INT_MAX",
+        "prefix_path": "..",
+        "files": [ "main.c", "caesar.c" ],
+        "cpp-extra-args": "-I.",
+        "main": "test_4",
+        "val-profile": "analyzer",
+        "slevel": 100
+    },
+    {
+        "name": "Interpreter, Test 1, 2, 3, 4",
+        "prefix_path": "..",
+        "files": [ "main.c", "caesar.c" ],
+        "cpp-extra-args": "-I.",
+        "main": "main",
+        "val-profile": "analyzer",
+        "slevel": 100
     }
 ]
